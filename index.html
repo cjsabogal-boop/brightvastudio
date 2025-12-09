@@ -64,8 +64,8 @@
   <meta name="theme-color" content="#6B7C3C">
 
   <!-- Preload Critical Resources -->
-  <link rel="preload" href="paula.webp" as="image" type="image/webp">
-  <link rel="preload" href="Fonts/Demo_Fonts/DEMO-atbscript-rg.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="./paula.webp" as="image" type="image/webp">
+  <link rel="preload" href="./Fonts/Demo_Fonts/DEMO-atbscript-rg.otf" as="font" type="font/otf" crossorigin>
 
   <!-- Fonts - Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -2044,11 +2044,8 @@
         <div class="hero-image-mobile">
           <div class="image-glow-effect"></div>
           <div class="image-rotating-border"></div>
-          <picture>
-            <source srcset="./paula.webp" type="image/webp">
-            <img src="./paula.jpg" alt="Paula B - Executive Virtual Assistant" class="hero-image" width="250"
-              height="250">
-          </picture>
+          <img src="./paula.webp" alt="Paula B - Executive Virtual Assistant" class="hero-image"
+            onerror="this.onerror=null; this.src='./paula.jpg';" width="250" height="250">
         </div>
         <h1>Your Strategic Partner in <br><em>Business & Life</em></h1>
         <p>I streamline operations for visionary leaders, allowing you to focus on high-level strategy while I manage
@@ -2063,11 +2060,8 @@
         <div class="image-rotating-border"></div>
         <div class="blob-bg"></div>
         <!-- Paula's professional portrait with animated background -->
-        <picture>
-          <source srcset="./paula.webp" type="image/webp">
-          <img src="./paula.jpg" alt="Paula B - Executive Virtual Assistant" class="hero-image" loading="eager"
-            width="600" height="600" fetchpriority="high">
-        </picture>
+        <img src="./paula.webp" alt="Paula B - Executive Virtual Assistant" class="hero-image" loading="eager"
+          onerror="this.onerror=null; this.src='./paula.jpg';" width="600" height="600" fetchpriority="high">
       </div>
     </div>
   </header>
@@ -2079,29 +2073,20 @@
         <div class="about-img-wrapper about-img-wrapper-tall">
           <div class="about-img-glow"></div>
           <div class="about-img-gradient"></div>
-          <picture>
-            <source srcset="1.webp" type="image/webp">
-            <img src="1.jpg" alt="Paula B Professional Executive Assistant" class="about-img tall" loading="lazy"
-              width="400" height="620">
-          </picture>
+          <img src="1.webp" alt="Paula B Professional Executive Assistant" class="about-img tall" loading="lazy"
+            onerror="this.onerror=null; this.src='1.jpg';" width="400" height="620">
         </div>
         <div class="about-img-wrapper">
           <div class="about-img-glow"></div>
           <div class="about-img-gradient"></div>
-          <picture>
-            <source srcset="2.webp" type="image/webp">
-            <img src="2.jpg" alt="Professional Workspace Organization" class="about-img" loading="lazy" width="400"
-              height="300">
-          </picture>
+          <img src="2.webp" alt="Professional Workspace Organization" class="about-img" loading="lazy"
+            onerror="this.onerror=null; this.src='2.jpg';" width="400" height="300">
         </div>
         <div class="about-img-wrapper">
           <div class="about-img-glow"></div>
           <div class="about-img-gradient"></div>
-          <picture>
-            <source srcset="3.webp" type="image/webp">
-            <img src="3.jpg" alt="Strategic Planning and Organization" class="about-img" loading="lazy" width="400"
-              height="300">
-          </picture>
+          <img src="3.webp" alt="Strategic Planning and Organization" class="about-img" loading="lazy"
+            onerror="this.onerror=null; this.src='3.jpg';" width="400" height="300">
         </div>
       </div>
       <div class="about-content" data-aos="fade-left">
