@@ -19,16 +19,46 @@
 </head>
 
 <body>
+    <!-- Navigation -->
     <nav>
-        <div class="container nav-inner" style="display:flex; justify-content:space-between; align-items:center;">
-            <a href="index.html" class="logo">
-                <span class="brightva-text">BrightVA</span><span class="studio-text">Studio</span>
-            </a>
-            <a href="index.html" class="btn btn-secondary">Back to Home</a>
+        <div class="container nav-inner">
+            <div class="logo" onclick="window.location.href='index.html'">BrightVA <span
+                    class="studio-text">Studio</span></div>
+            <div class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#testimonials">Testimonials</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="index.html#contact" class="btn btn-primary"
+                    style="padding: 0.8rem 2rem; font-size: 0.9rem;">Let's
+                    Chat</a>
+                <!-- Mobile Hamburger Toggle -->
+                <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
     </nav>
 
-    <section class="container" style="padding-top: 10rem; min-height: 60vh; max-width: 800px;">
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-links">
+            <a href="index.html#about" class="mobile-nav-link">About</a>
+            <a href="index.html#services" class="mobile-nav-link">Services</a>
+            <a href="index.html#testimonials" class="mobile-nav-link">Testimonials</a>
+            <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+        </div>
+        <a href="index.html#contact" class="btn btn-primary">Let's Chat</a>
+    </div>
+
+    <section class="container legal-page-container">
         <h1>Disclaimer</h1>
 
         <div style="margin-top: 2rem; color: var(--text-dark); line-height: 1.8;">
@@ -65,12 +95,61 @@
         <div class="container">
             <div class="logo" style="margin-bottom: 1rem;"><span class="brightva-text">BrightVA</span><span
                     class="studio-text">Studio</span></div>
+            <div class="footer-socials">
+                <a href="http://instagram.com/accounts/login/?next=%2Fbrightvastudio%2F&source=omni_redirect"
+                    target="_blank" rel="noopener noreferrer"><i data-lucide="instagram"></i></a>
+                <a href="https://www.linkedin.com/in/paulablancogonzalez/" target="_blank" rel="noopener noreferrer"><i
+                        data-lucide="linkedin"></i></a>
+                <a href="mailto:hello@brightvastudio.com"><i data-lucide="mail"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="index.html#hero">Home</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
             <p style="color: white; font-size: 0.8rem; margin-top: 0.5rem;">&copy; 2024 Paula B. All Rights Reserved. |
                 <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-and-conditions.html">Terms &
-                    Conditions</a> | <a href="disclaimer.html">Disclaimer</a></p>
+                    Conditions</a> | <a href="disclaimer.html">Disclaimer</a>
+            </p>
         </div>
     </footer>
-    <script>lucide.createIcons();</script>
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Logic
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', () => {
+                mobileMenuToggle.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+                mobileNavOverlay.classList.toggle('active');
+                document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+            });
+        }
+
+        if (mobileNavOverlay) {
+            mobileNavOverlay.addEventListener('click', () => {
+                mobileMenuToggle.classList.remove('active');
+                mobileNav.classList.remove('active');
+                mobileNavOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuToggle.classList.remove('active');
+                mobileNav.classList.remove('active');
+                mobileNavOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
 </body>
 
 </html>
