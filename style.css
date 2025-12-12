@@ -941,7 +941,323 @@
       /* Light Gold */
     }
 
-    /* Back Side */
+    /* =========================================
+       ZIG-ZAG SERVICES LAYOUT
+       ========================================= */
+
+    .services-zigzag {
+      padding: 6rem 0 4rem;
+      background: linear-gradient(180deg, #D4D9C8 0%, #C5CAAF 50%, #E8EBE0 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .services-zigzag .container {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      margin-bottom: 3rem;
+    }
+
+    /* Category Header Bands */
+    .category-header {
+      background: linear-gradient(135deg, var(--accent-olive) 0%, #5a6833 100%);
+      padding: 3rem 2rem;
+      margin: 4rem 0 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .category-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.5;
+    }
+
+    .category-header .container {
+      text-align: left;
+      margin-bottom: 0;
+    }
+
+    .category-header .category-badge {
+      display: inline-block;
+      font-family: var(--font-heading);
+      font-size: 3rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.2);
+      margin-bottom: 0.5rem;
+    }
+
+    .category-header .category-title {
+      font-size: 2.2rem;
+      color: white;
+      margin-bottom: 0.5rem;
+      font-weight: 400;
+    }
+
+    .category-header .category-subtitle {
+      color: rgba(255, 255, 255, 0.8);
+      font-style: italic;
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    /* Creative Category Style */
+    .category-header.creative {
+      background: linear-gradient(135deg, var(--accent-terracotta) 0%, #6B5D4D 100%);
+    }
+
+    /* Lifestyle Category Style */
+    .category-header.lifestyle {
+      background: linear-gradient(135deg, #2D3319 0%, #1a1a1a 100%);
+    }
+
+    /* Service Rows - Zig-Zag */
+    .service-row {
+      display: flex;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      gap: 4rem;
+      position: relative;
+    }
+
+    .service-row::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(107, 124, 60, 0.2), transparent);
+    }
+
+    .service-row:last-of-type::after {
+      display: none;
+    }
+
+    .service-visual {
+      flex: 0 0 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon-circle {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 20px 60px rgba(107, 124, 60, 0.15);
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+    }
+
+    .icon-circle::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      border-radius: 50%;
+      border: 2px dashed rgba(107, 124, 60, 0.2);
+      animation: spinSlow 20s linear infinite;
+    }
+
+    @keyframes spinSlow {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .icon-circle i,
+    .icon-circle svg {
+      width: 50px;
+      height: 50px;
+      color: var(--accent-olive);
+      transition: all 0.4s ease;
+    }
+
+    .service-row:hover .icon-circle {
+      transform: scale(1.1) rotate(10deg);
+      box-shadow: 0 25px 80px rgba(107, 124, 60, 0.25);
+    }
+
+    .service-row:hover .icon-circle i,
+    .service-row:hover .icon-circle svg {
+      transform: scale(1.1);
+    }
+
+    /* Creative Icon Circle */
+    .icon-circle.creative {
+      background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-terracotta) 100%);
+    }
+
+    .icon-circle.creative i,
+    .icon-circle.creative svg {
+      color: white;
+    }
+
+    .icon-circle.creative::before {
+      border-color: rgba(184, 160, 115, 0.3);
+    }
+
+    /* Lifestyle Icon Circle */
+    .icon-circle.lifestyle {
+      background: #1a1a1a;
+      border: 2px solid var(--accent-gold);
+    }
+
+    .icon-circle.lifestyle i,
+    .icon-circle.lifestyle svg {
+      color: var(--accent-gold);
+    }
+
+    .icon-circle.lifestyle::before {
+      border-color: rgba(184, 160, 115, 0.2);
+    }
+
+    /* Service Content */
+    .service-content {
+      flex: 1;
+    }
+
+    .service-content h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--text-dark);
+      position: relative;
+      display: inline-block;
+    }
+
+    .service-content h3::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: var(--accent-olive);
+      border-radius: 2px;
+      transition: width 0.4s ease;
+    }
+
+    .service-row:hover .service-content h3::after {
+      width: 100%;
+    }
+
+    .service-content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--text-soft);
+    }
+
+    /* Reversed Row */
+    .service-row.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .service-row.reverse .service-content {
+      text-align: right;
+    }
+
+    .service-row.reverse .service-content h3::after {
+      left: auto;
+      right: 0;
+    }
+
+    /* CTA Section */
+    .services-cta {
+      text-align: center;
+      padding: 5rem 2rem;
+      margin-top: 3rem;
+    }
+
+    .services-cta p {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      font-style: italic;
+      color: var(--text-dark);
+      margin-bottom: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .service-row {
+        flex-direction: column !important;
+        text-align: center;
+        padding: 3rem 1.5rem;
+        gap: 2rem;
+      }
+
+      .service-row.reverse .service-content {
+        text-align: center;
+      }
+
+      .service-row.reverse .service-content h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+      }
+
+      .service-content h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .service-visual {
+        flex: 0 0 auto;
+      }
+
+      .icon-circle {
+        width: 100px;
+        height: 100px;
+      }
+
+      .icon-circle i,
+      .icon-circle svg {
+        width: 35px;
+        height: 35px;
+      }
+
+      .service-content h3 {
+        font-size: 1.6rem;
+      }
+
+      .service-content p {
+        font-size: 1rem;
+      }
+
+      .category-header {
+        padding: 2rem 1.5rem;
+        margin: 2rem 0 1rem;
+      }
+
+      .category-header .category-title {
+        font-size: 1.6rem;
+      }
+
+      .category-header .category-badge {
+        font-size: 2rem;
+      }
+    }
+
+
     .offering-card-back {
       background: var(--accent-olive);
       /* Solid Olive */
@@ -1804,6 +2120,12 @@
       padding-left: 20px;
       margin-left: 1rem;
       list-style-position: outside;
+    }
+
+    /* Legal Pages Background */
+    body.legal-page {
+      background: linear-gradient(135deg, rgba(232, 235, 224, 1) 0%, rgba(212, 217, 200, 1) 100%);
+      /* Increased opacity to 1 for solid background */
     }
 
     li {
