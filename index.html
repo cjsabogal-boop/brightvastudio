@@ -228,9 +228,24 @@
         <div class="timeline-dot"></div>
       </div>
 
-      <!-- Centro: Foto de Paula -->
-      <div class="timeline-photo" data-aos="zoom-in">
-        <img src="./paula.jpg" alt="Paula Blanco">
+      <!-- Centro: Foto de Paula con iconos flotantes -->
+      <div class="timeline-photo-wrapper">
+        <!-- Iconos flotantes sutiles -->
+        <div class="floating-icons">
+          <i data-lucide="plane" class="floating-icon icon-1"></i>
+          <i data-lucide="calendar" class="floating-icon icon-2"></i>
+          <i data-lucide="bird" class="floating-icon icon-3"></i>
+          <i data-lucide="globe" class="floating-icon icon-4"></i>
+          <i data-lucide="mail" class="floating-icon icon-5"></i>
+          <i data-lucide="clock" class="floating-icon icon-6"></i>
+          <i data-lucide="heart" class="floating-icon icon-7"></i>
+          <i data-lucide="sparkles" class="floating-icon icon-8"></i>
+          <i data-lucide="coffee" class="floating-icon icon-9"></i>
+          <i data-lucide="briefcase" class="floating-icon icon-10"></i>
+        </div>
+        <div class="timeline-photo" id="timeline-center-photo" data-aos="zoom-in">
+          <img src="./foto2_optimized.jpg" alt="Paula Blanco">
+        </div>
       </div>
 
       <!-- Milestone 3 -->
@@ -831,6 +846,27 @@
         duration: 1
       });
     });
+
+    // --- Timeline Center Photo Parallax Effect ---
+    const timelineCenterPhoto = document.getElementById('timeline-center-photo');
+    if (timelineCenterPhoto) {
+      gsap.fromTo(timelineCenterPhoto,
+        {
+          y: -80 // Empieza más arriba
+        },
+        {
+          scrollTrigger: {
+            trigger: timelineCenterPhoto,
+            start: "top 90%",
+            end: "center center",
+            scrub: 1.5,
+            // markers: true // Descomenta para debug
+          },
+          y: 0, // Termina en su posición natural (centro de las líneas)
+          ease: "power2.out"
+        }
+      );
+    }
 
     // --- Floating Particles System ---
     const canvas = document.getElementById('particles-canvas');

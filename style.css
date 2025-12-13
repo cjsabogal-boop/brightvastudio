@@ -649,9 +649,9 @@
     /* Central Photo */
     .timeline-photo {
       position: relative;
-      width: 200px;
-      height: 200px;
-      margin: 3rem auto;
+      width: 520px;
+      height: 520px;
+      margin: 0.5rem auto;
       z-index: 5;
     }
 
@@ -659,22 +659,255 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: 50% 25%;
+      /* Centra la cara hacia arriba */
       border-radius: 50%;
-      border: 6px solid white;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+      border: 8px solid white;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.2);
     }
 
     .timeline-photo::before {
       content: '';
       position: absolute;
-      top: -15px;
-      left: -15px;
-      right: -15px;
-      bottom: -15px;
+      top: -18px;
+      left: -18px;
+      right: -18px;
+      bottom: -18px;
       border-radius: 50%;
       border: 3px dashed var(--accent-gold);
       animation: spinSlow 20s linear infinite;
     }
+
+    /* Timeline Photo Wrapper with Floating Icons */
+    .timeline-photo-wrapper {
+      position: relative;
+      width: 600px;
+      height: 600px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .floating-icons {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .floating-icon {
+      position: absolute;
+      color: var(--accent-sage);
+      opacity: 0.25;
+      transition: opacity 0.3s ease;
+      stroke: var(--accent-sage);
+      stroke-width: 1.5;
+    }
+
+    /* Posiciones y animaciones individuales para cada icono */
+    .floating-icon.icon-1 {
+      top: 5%;
+      left: 10%;
+      width: 42px;
+      height: 42px;
+      animation: floatIcon1 8s ease-in-out infinite;
+    }
+
+    .floating-icon.icon-2 {
+      top: 15%;
+      right: 8%;
+      width: 38px;
+      height: 38px;
+      animation: floatIcon2 7s ease-in-out infinite;
+    }
+
+    .floating-icon.icon-3 {
+      top: 50%;
+      left: 2%;
+      width: 36px;
+      height: 36px;
+      animation: floatIcon3 9s ease-in-out infinite;
+    }
+
+    .floating-icon.icon-4 {
+      bottom: 20%;
+      left: 5%;
+      width: 40px;
+      height: 40px;
+      animation: floatIcon4 6s ease-in-out infinite;
+    }
+
+    .floating-icon.icon-5 {
+      bottom: 5%;
+      left: 25%;
+      width: 34px;
+      height: 34px;
+      animation: floatIcon5 8.5s ease-in-out infinite;
+    }
+
+    .floating-icon.icon-6 {
+      top: 8%;
+      right: 25%;
+      width: 36px;
+      height: 36px;
+      animation: floatIcon6 7.5s ease-in-out infinite;
+    }
+
+    .floating-icon.icon-7 {
+      top: 40%;
+      right: 0%;
+      width: 38px;
+      height: 38px;
+      animation: floatIcon7 9.5s ease-in-out infinite;
+    }
+
+    .floating-icon.icon-8 {
+      bottom: 35%;
+      right: 3%;
+      width: 34px;
+      height: 34px;
+      animation: floatIcon8 6.5s ease-in-out infinite;
+    }
+
+    .floating-icon.icon-9 {
+      bottom: 8%;
+      right: 20%;
+      width: 36px;
+      height: 36px;
+      animation: floatIcon9 8s ease-in-out infinite;
+    }
+
+    .floating-icon.icon-10 {
+      top: 25%;
+      left: 0%;
+      width: 40px;
+      height: 40px;
+      animation: floatIcon10 7s ease-in-out infinite;
+    }
+
+    /* Animaciones flotantes para cada icono */
+    @keyframes floatIcon1 {
+
+      0%,
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+
+      50% {
+        transform: translate(15px, 20px) rotate(10deg);
+      }
+    }
+
+    @keyframes floatIcon2 {
+
+      0%,
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+
+      50% {
+        transform: translate(-20px, 15px) rotate(-8deg);
+      }
+    }
+
+    @keyframes floatIcon3 {
+
+      0%,
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+
+      50% {
+        transform: translate(25px, -10px) rotate(12deg);
+      }
+    }
+
+    @keyframes floatIcon4 {
+
+      0%,
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+
+      50% {
+        transform: translate(18px, -25px) rotate(-10deg);
+      }
+    }
+
+    @keyframes floatIcon5 {
+
+      0%,
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+
+      50% {
+        transform: translate(-12px, -18px) rotate(8deg);
+      }
+    }
+
+    @keyframes floatIcon6 {
+
+      0%,
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+
+      50% {
+        transform: translate(10px, 22px) rotate(-12deg);
+      }
+    }
+
+    @keyframes floatIcon7 {
+
+      0%,
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+
+      50% {
+        transform: translate(-22px, 12px) rotate(15deg);
+      }
+    }
+
+    @keyframes floatIcon8 {
+
+      0%,
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+
+      50% {
+        transform: translate(-15px, -20px) rotate(-8deg);
+      }
+    }
+
+    @keyframes floatIcon9 {
+
+      0%,
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+
+      50% {
+        transform: translate(20px, -15px) rotate(10deg);
+      }
+    }
+
+    @keyframes floatIcon10 {
+
+      0%,
+      100% {
+        transform: translate(0, 0) rotate(0deg);
+      }
+
+      50% {
+        transform: translate(18px, 18px) rotate(-15deg);
+      }
+    }
+
 
     /* Quote Section */
     .journey-quote {
