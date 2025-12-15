@@ -383,6 +383,13 @@
       opacity: 1 !important;
     }
 
+    .hero-image-wrapper picture,
+    .hero-image-mobile picture {
+      display: block;
+      position: relative;
+      z-index: 9999;
+    }
+
     /* Rotating gradient border - now a real div */
     .image-rotating-border {
       content: '';
@@ -627,6 +634,11 @@
     }
 
     /* Timeline Image */
+    .timeline-content picture {
+      display: block;
+      width: 100%;
+    }
+
     .timeline-img {
       width: 100%;
       height: 120px;
@@ -665,6 +677,13 @@
       height: 520px;
       margin: 0.5rem auto;
       z-index: 5;
+    }
+
+    .timeline-photo picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
     }
 
     .timeline-photo img {
