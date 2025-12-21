@@ -173,7 +173,6 @@
       color: var(--accent-olive);
       margin-top: 10px;
       align-self: flex-end;
-      margin-right: -5px;
       display: block;
       transform: rotate(0deg);
       /* Studio queda recto, alineado a la derecha debajo de VA */
@@ -999,13 +998,13 @@
     /* Responsive Timeline */
     @media (max-width: 768px) {
       .timeline-line {
-        left: 20px;
+        left: 30px;
       }
 
       .timeline-item {
         width: 100%;
-        padding-left: 60px !important;
-        padding-right: 1rem !important;
+        padding-left: 70px !important;
+        padding-right: 1.5rem !important;
         text-align: left !important;
       }
 
@@ -1016,13 +1015,24 @@
 
       .timeline-item.left .timeline-dot,
       .timeline-item.right .timeline-dot {
-        left: 10px;
+        left: 20px;
         right: auto;
       }
 
+      .timeline-photo-wrapper {
+        width: 100%;
+        height: auto;
+        padding: 2rem 0;
+      }
+
       .timeline-photo {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
+      }
+
+      .floating-icons {
+        display: none;
+        /* Hide cluttered icons on small mobile */
       }
 
       .journey-quote blockquote {
@@ -1287,7 +1297,7 @@
 
     .section-title {
       font-family: 'Playfair Display', serif;
-      font-size: 2.8rem;
+      font-size: clamp(2rem, 8vw, 2.8rem);
       margin-bottom: 1.5rem;
       color: var(--text-dark);
       font-weight: 400;
@@ -1299,7 +1309,7 @@
       color: var(--accent-olive);
       text-transform: none;
       letter-spacing: 0.02em;
-      font-size: 2.2rem;
+      font-size: clamp(1.8rem, 6vw, 2.2rem);
       font-weight: 400;
       margin-bottom: 1rem;
       display: block;
@@ -1664,6 +1674,8 @@
       .service-content h3::after {
         left: 50%;
         transform: translateX(-50%);
+        width: 60px;
+        /* Consistent width for centered mobile view */
       }
 
       .service-visual {
@@ -2391,7 +2403,8 @@
       .logo span.studio-text {
         font-size: 0.6rem;
         margin-top: 4px;
-        margin-right: 0;
+        margin-right: -10px;
+        /* Compensate for italic slant on small screens */
       }
 
       .btn {
