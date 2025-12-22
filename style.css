@@ -2036,7 +2036,7 @@
 
     /* Contact & Scheduling Section */
     .contact-section {
-      padding: 8rem 0;
+      padding: 4rem 0 8rem;
       /* Mismo fondo que About */
       background: linear-gradient(135deg, #D4D9C8 0%, #E8EBE0 25%, #C5CAAF 50%, #E8EBE0 75%, #D4D9C8 100%);
       background-size: 400% 400%;
