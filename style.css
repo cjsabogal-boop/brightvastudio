@@ -1395,7 +1395,7 @@
        ========================================= */
 
     .services-zigzag {
-      padding: 6rem 0 4rem;
+      padding: 6rem 0 0;
       background: linear-gradient(180deg, #D4D9C8 0%, #C5CAAF 50%, #E8EBE0 100%);
       position: relative;
       overflow: hidden;
