@@ -1707,7 +1707,7 @@
     .services-cta {
       text-align: center;
       padding: 3rem 2rem;
-      margin-top: 3rem;
+      margin-top: 0;
       background: linear-gradient(135deg, #B8C5A0 0%, #A8B88F 50%, #B8C5A0 100%);
       border-radius: 0;
     }
