@@ -707,6 +707,13 @@
         </div>
 
       </div>
+
+      <!-- Indicadores de navegación (dots) -->
+      <div class="testimonial-dots" style="display: flex; justify-content: center; gap: 0.8rem; margin-top: 2rem;">
+        <button class="testimonial-dot active" data-index="0" aria-label="Testimonial 1"></button>
+        <button class="testimonial-dot" data-index="1" aria-label="Testimonial 2"></button>
+        <button class="testimonial-dot" data-index="2" aria-label="Testimonial 3"></button>
+      </div>
     </div>
   </section>
 
@@ -1304,6 +1311,37 @@
           }
         });
       });
+    });
+
+    // Testimonial Navigation Dots
+    document.addEventListener('DOMContentLoaded', () => {
+      const testimonialCards = document.querySelectorAll('.testimonial-card');
+      const dots = document.querySelectorAll('.testimonial-dot');
+      let currentIndex = 0;
+
+      function showTestimonial(index) {
+        // Ocultar todos los testimonios
+        testimonialCards.forEach(card => card.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+
+        // Mostrar el testimonial seleccionado
+        testimonialCards[index].classList.add('active');
+        dots[index].classList.add('active');
+        currentIndex = index;
+      }
+
+      // Click en dots
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          showTestimonial(index);
+        });
+      });
+
+      // Auto-rotate cada 5 segundos
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % testimonialCards.length;
+        showTestimonial(currentIndex);
+      }, 5000);
     });
 
   </script>

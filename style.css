@@ -1958,6 +1958,28 @@
       margin: 0 auto;
     }
 
+    /* Testimonial Navigation Dots */
+    .testimonial-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 2px solid var(--accent-olive);
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      padding: 0;
+    }
+
+    .testimonial-dot:hover {
+      background: rgba(139, 153, 95, 0.3);
+      transform: scale(1.2);
+    }
+
+    .testimonial-dot.active {
+      background: var(--accent-olive);
+      transform: scale(1.3);
+    }
+
     .note-text {
       font-size: 1.8rem;
       font-family: var(--font-heading);
