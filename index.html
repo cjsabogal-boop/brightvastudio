@@ -335,7 +335,7 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Strategic Calendar Management</h3>
+        <h3>Strategic Calendar Management <i data-lucide="chevron-down" class="service-chevron"></i></h3>
         <p>Stop playing Tetris with your time. I don't just schedule meetings; I protect your focus. I manage complex
           time zones, set up buffer times to prevent burnout, and handle rescheduling seamlessly. I ensure your calendar
           reflects your business priorities, not just other people's demands.</p>
@@ -350,7 +350,7 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Inbox Triage & Communication</h3>
+        <h3>Inbox Triage & Communication <i data-lucide="chevron-down" class="service-chevron"></i></h3>
         <p>Reach 'Inbox Zero' without the stress. I filter noise, highlight urgent matters, and draft professional
           responses on your behalf. Whether it's negotiating with vendors or replying to clients, I maintain your
           professional voice in both English and Spanish.</p>
@@ -365,7 +365,7 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Executive Travel Logistics</h3>
+        <h3>Executive Travel Logistics <i data-lucide="chevron-down" class="service-chevron"></i></h3>
         <p>Travel with the ease of a diplomat. Leveraging my background in embassy logistics, I coordinate end-to-end
           travel arrangements: flights, premium accommodation, ground transport, and detailed visual itineraries. I
           anticipate problems before they happen so you can focus on the destination, not the journey.</p>
@@ -380,7 +380,7 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Bilingual Business Liaison</h3>
+        <h3>Bilingual Business Liaison <i data-lucide="chevron-down" class="service-chevron"></i></h3>
         <p>Break down language barriers to expand your business. I act as your bridge for operations in Latin America
           and the US/Canada. From translating documents and interpreting during virtual meetings to managing
           relationships with Spanish-speaking stakeholders, I ensure nothing gets lost in translation.</p>
@@ -404,7 +404,7 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Social Media Curation & Community</h3>
+        <h3>Social Media Curation & Community <i data-lucide="chevron-down" class="service-chevron"></i></h3>
         <p>Your digital storefront should look as professional as you are. I handle the day-to-day of your social
           presence: curating aesthetic content, designing on-brand posts, scheduling for optimal times, and engaging
           with your audience to turn followers into loyal clients.</p>
@@ -419,7 +419,7 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>High-Impact Presentation Design</h3>
+        <h3>High-Impact Presentation Design <i data-lucide="chevron-down" class="service-chevron"></i></h3>
         <p>Ditch the boring slides. I transform your rough notes and data into sleek, persuasive Executive Pitch Decks,
           Sales Presentations, and webinar slides. I combine corporate structure with creative flair to keep your
           audience engaged.</p>
@@ -434,7 +434,7 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Digital Asset Creation</h3>
+        <h3>Digital Asset Creation <i data-lucide="chevron-down" class="service-chevron"></i></h3>
         <p>Professional collateral that sells for you. I design Lead Magnets (E-books), Media Kits, One-Pagers, and
           Welcome Packets that align perfectly with your brand identity, helping you position yourself as an authority
           in your niche.</p>
@@ -449,7 +449,7 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Newsletter & Email Marketing</h3>
+        <h3>Newsletter & Email Marketing <i data-lucide="chevron-down" class="service-chevron"></i></h3>
         <p>Stay top-of-mind with your clients. I format, design, and schedule your weekly or monthly newsletters. I
           ensure your list is segmented correctly and your emails look perfect on mobile and desktop, ready to drive
           clicks and sales.</p>
@@ -473,7 +473,7 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Personal Lifestyle Concierge</h3>
+        <h3>Personal Lifestyle Concierge <i data-lucide="chevron-down" class="service-chevron"></i></h3>
         <p>Success requires balance. Let me handle the personal details that distract you from the big picture: making
           restaurant reservations, researching gifts for clients/family, booking medical appointments, or managing
           household vendors.</p>
@@ -488,7 +488,7 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Virtual Event & Webinar Coordination</h3>
+        <h3>Virtual Event & Webinar Coordination <i data-lucide="chevron-down" class="service-chevron"></i></h3>
         <p>Host flawless online events. From setting up the Zoom/Webinar backend and managing registrations to sending
           reminders and providing live technical support, I ensure your virtual events run smoothly from start to
           finish.</p>
@@ -1476,22 +1476,17 @@
         }
 
         // Service Items
-        const cards = servicesSection.querySelectorAll('.offering-card');
-        cards.forEach((card, index) => {
+        const rows = servicesSection.querySelectorAll('.service-row');
+        rows.forEach((row, index) => {
           if (t.services.items[index]) {
-            // Front
-            const h3Front = card.querySelector('.offering-card-front h3');
-            if (h3Front) h3Front.textContent = t.services.items[index].title;
-            const btnFront = card.querySelector('.btn-flip');
-            if (btnFront) btnFront.innerHTML = t.services.btnFront + ' <i data-lucide="arrow-right" size="16"></i>';
-
-            // Back
-            const h3Back = card.querySelector('.offering-card-back h3');
-            if (h3Back) h3Back.textContent = t.services.items[index].title;
-            const pBack = card.querySelector('.offering-card-back p');
-            if (pBack) pBack.textContent = t.services.items[index].desc;
-            const btnBack = card.querySelector('.btn-flip-back');
-            if (btnBack) btnBack.innerHTML = t.services.btnBack + ' <i data-lucide="rotate-ccw" size="16"></i>';
+            const h3 = row.querySelector('.service-content h3');
+            // Preserve the chevron
+            if (h3) {
+              const chevron = '<i data-lucide="chevron-down" class="service-chevron"></i>';
+              h3.innerHTML = t.services.items[index].title + ' ' + chevron;
+            }
+            const p = row.querySelector('.service-content p');
+            if (p) p.textContent = t.services.items[index].desc;
           }
         });
       }
@@ -1593,6 +1588,28 @@
 
     mobileNavLinks.forEach(link => {
       link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Accordion Logic for Services
+    document.addEventListener('DOMContentLoaded', () => {
+      const serviceRows = document.querySelectorAll('.service-row');
+
+      serviceRows.forEach(row => {
+        row.addEventListener('click', () => {
+          const isActive = row.classList.contains('active');
+
+          // Close all rows
+          serviceRows.forEach(r => r.classList.remove('active'));
+
+          // If the clicked row wasn't active, open it
+          if (!isActive) {
+            row.classList.add('active');
+          }
+
+          // Refresh icons for the newly opened row if needed, 
+          // though CSS handles the rotation
+        });
+      });
     });
 
   </script>
