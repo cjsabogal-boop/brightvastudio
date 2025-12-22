@@ -371,6 +371,10 @@
       max-width: 500px;
     }
 
+    .hero-btns {
+      margin-bottom: 3rem;
+    }
+
     .hero-image-wrapper {
       position: relative;
       z-index: 5;
