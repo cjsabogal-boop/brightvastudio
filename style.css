@@ -1673,15 +1673,15 @@
       font-size: 1.1rem;
       line-height: 1.8;
       color: var(--text-soft);
-      max-height: 0;
-      overflow: hidden;
-      opacity: 0;
+      /* En desktop: siempre visible */
+      max-height: none;
+      opacity: 1;
+      margin-top: 1rem;
       transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-      margin: 0;
     }
 
     .service-row.active .service-content p {
-      max-height: 500px;
+      max-height: none;
       opacity: 1;
       margin-top: 1rem;
     }
@@ -1763,6 +1763,18 @@
 
       .service-content p {
         font-size: 1rem;
+        /* En mobile: acordeón - oculto por defecto */
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        margin-top: 0;
+      }
+
+      .service-row.active .service-content p {
+        /* En mobile: acordeón - visible cuando está activo */
+        max-height: 500px;
+        opacity: 1;
+        margin-top: 1rem;
       }
 
       .category-header {

@@ -1284,24 +1284,24 @@
       link.addEventListener('click', closeMobileMenu);
     });
 
-    // Accordion Logic for Services
+    // Accordion Logic for Services (solo en mobile)
     document.addEventListener('DOMContentLoaded', () => {
       const serviceRows = document.querySelectorAll('.service-row');
 
       serviceRows.forEach(row => {
         row.addEventListener('click', () => {
-          const isActive = row.classList.contains('active');
+          // Solo activar acordeón en mobile (pantallas menores a 768px)
+          if (window.innerWidth <= 768) {
+            const isActive = row.classList.contains('active');
 
-          // Close all rows
-          serviceRows.forEach(r => r.classList.remove('active'));
+            // Close all rows
+            serviceRows.forEach(r => r.classList.remove('active'));
 
-          // If the clicked row wasn't active, open it
-          if (!isActive) {
-            row.classList.add('active');
+            // If the clicked row wasn't active, open it
+            if (!isActive) {
+              row.classList.add('active');
+            }
           }
-
-          // Refresh icons for the newly opened row if needed, 
-          // though CSS handles the rotation
         });
       });
     });
