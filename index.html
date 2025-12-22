@@ -152,16 +152,16 @@
   <!-- Mobile Navigation Menu -->
   <div class="mobile-nav" id="mobileNav">
     <div class="mobile-nav-links">
-      <a href="#about" class="mobile-nav-link">About</a>
-      <a href="#services" class="mobile-nav-link">Services</a>
-      <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
-      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <a href="#about" class="mobile-nav-link" data-i18n="nav.about">About</a>
+      <a href="#services" class="mobile-nav-link" data-i18n="nav.services">Services</a>
+      <a href="#testimonials" class="mobile-nav-link" data-i18n="nav.testimonials">Testimonials</a>
+      <a href="#contact" class="mobile-nav-link" data-i18n="nav.contact">Contact</a>
     </div>
     <div class="language-switcher">
       <button class="lang-btn mobile-lang active" data-lang="en">EN</button>
       <button class="lang-btn mobile-lang" data-lang="es">ES</button>
     </div>
-    <a href="#contact" class="btn btn-primary">Let's Chat</a>
+    <a href="#contact" class="btn btn-primary" data-i18n="nav.cta">Let's Chat</a>
   </div>
 
   <!-- Hero Section -->
@@ -171,7 +171,7 @@
 
     <div class="container hero-container">
       <div class="hero-text">
-        <span class="script-highlight">Hey there, I'm Paula</span>
+        <span class="script-highlight" data-i18n="hero.subtitle">Hey there, I'm Paula</span>
         <!-- Imagen para móvil - se muestra solo en responsivo entre Hey there y el título -->
         <div class="hero-image-mobile">
           <div class="image-glow-effect"></div>
@@ -182,12 +182,14 @@
               onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'">
           </picture>
         </div>
-        <h1>Your Strategic Partner in <br><em>Business & Life</em></h1>
-        <p>I streamline operations for visionary leaders, allowing you to focus on high-level strategy while I manage
-          the execution. From complex logistics to digital presence, let's build your legacy with precision.</p>
+        <h1 data-i18n="hero.title" data-i18n-html>Your Strategic Partner in <br><em>Business & Life</em></h1>
+        <p data-i18n="hero.description">I streamline operations for visionary leaders, allowing you to focus on
+          high-level strategy while I manage the execution. From complex logistics to digital presence, let's build your
+          legacy with precision.</p>
         <div class="hero-btns">
-          <a href="#contact" class="btn btn-primary">Work With Me</a>
-          <a href="#services" class="btn btn-secondary" style="margin-left: 1rem;">View Services</a>
+          <a href="#contact" class="btn btn-primary" data-i18n="hero.btn1">Work With Me</a>
+          <a href="#services" class="btn btn-secondary" style="margin-left: 1rem;" data-i18n="hero.btn2">View
+            Services</a>
         </div>
       </div>
       <div class="hero-image-wrapper" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="1000">
@@ -210,9 +212,9 @@
     <canvas id="about-particles-canvas"></canvas>
 
     <div class="container">
-      <span class="section-subtitle">About</span>
-      <h2 class="section-title">The Journey to Becoming Your Strategic Partner</h2>
-      <p class="journey-intro">Every great partnership has a story. Here's mine.</p>
+      <span class="section-subtitle" data-i18n="about.subtitle">About</span>
+      <h2 class="section-title" data-i18n="about.title">The Journey to Becoming Your Strategic Partner</h2>
+      <p class="journey-intro" data-i18n="about.intro">Every great partnership has a story. Here's mine.</p>
     </div>
 
     <!-- Timeline -->
@@ -226,9 +228,9 @@
             <source srcset="1.webp" type="image/webp">
             <img src="1.jpg" alt="Embassy" class="timeline-img" loading="lazy">
           </picture>
-          <span class="timeline-year">2015</span>
-          <h3>Diplomatic Beginnings</h3>
-          <p>Embassy logistics: precision, discretion, high-stakes coordination.</p>
+          <span class="timeline-year" data-i18n="about.timeline.year1">2015</span>
+          <h3 data-i18n="about.timeline.title1">Diplomatic Beginnings</h3>
+          <p data-i18n="about.timeline.desc1">Embassy logistics: precision, discretion, high-stakes coordination.</p>
         </div>
         <div class="timeline-dot"></div>
       </div>
@@ -240,9 +242,9 @@
             <source srcset="3.webp" type="image/webp">
             <img src="3.jpg" alt="Corporate" class="timeline-img" loading="lazy">
           </picture>
-          <span class="timeline-year">2018</span>
-          <h3>Corporate Excellence</h3>
-          <p>Supporting C-suite executives in multinational environments.</p>
+          <span class="timeline-year" data-i18n="about.timeline.year2">2018</span>
+          <h3 data-i18n="about.timeline.title2">Corporate Excellence</h3>
+          <p data-i18n="about.timeline.desc2">Supporting C-suite executives in multinational environments.</p>
         </div>
         <div class="timeline-dot"></div>
       </div>
@@ -277,9 +279,9 @@
             <source srcset="2.webp" type="image/webp">
             <img src="2.jpg" alt="Global" class="timeline-img" loading="lazy">
           </picture>
-          <span class="timeline-year">2021</span>
-          <h3>Global Expansion</h3>
-          <p>8+ years of experience. Bilingual bridge: North & Latin America.</p>
+          <span class="timeline-year" data-i18n="about.timeline.year3">2021</span>
+          <h3 data-i18n="about.timeline.title3">Global Expansion</h3>
+          <p data-i18n="about.timeline.desc3">8+ years of experience. Bilingual bridge: North & Latin America.</p>
         </div>
         <div class="timeline-dot"></div>
       </div>
@@ -291,9 +293,9 @@
             <source srcset="foto1.webp" type="image/webp">
             <img src="foto1.jpg" alt="BrightVA Studio" class="timeline-img" loading="lazy">
           </picture>
-          <span class="timeline-year">Today</span>
-          <h3>BrightVA Studio</h3>
-          <p>Your strategic partner in business & life.</p>
+          <span class="timeline-year" data-i18n="about.timeline.year4">Today</span>
+          <h3 data-i18n="about.timeline.title4">BrightVA Studio</h3>
+          <p data-i18n="about.timeline.desc4">Your strategic partner in business & life.</p>
         </div>
         <div class="timeline-dot"></div>
       </div>
@@ -301,10 +303,10 @@
 
     <!-- Quote & CTA -->
     <div class="journey-quote" data-aos="fade-up">
-      <blockquote>"I don't just manage tasks; I manage outcomes. I'm here to be the gatekeeper of your time and the
-        architect of your peace of mind."</blockquote>
-      <div class="signature">Warmly, Paula</div>
-      <a href="#contact" class="btn btn-primary">Book a Discovery Call</a>
+      <blockquote data-i18n="about.quote">"I don't just manage tasks; I manage outcomes. I'm here to be the gatekeeper
+        of your time and the architect of your peace of mind."</blockquote>
+      <div class="signature" data-i18n="about.signature">Warmly, Paula</div>
+      <a href="#contact" class="btn btn-primary" data-i18n="about.cta">Book a Discovery Call</a>
     </div>
   </section>
 
@@ -314,16 +316,17 @@
     <canvas id="offerings-canvas"></canvas>
 
     <div class="container">
-      <span class="section-subtitle">Services</span>
-      <h2 class="section-title">Strategic Business Solutions</h2>
+      <span class="section-subtitle" data-i18n="services.subtitle">Services</span>
+      <h2 class="section-title" data-i18n="services.title">Strategic Business Solutions</h2>
     </div>
 
     <!-- Category 1: Executive Operations & Management -->
     <div class="category-header">
       <div class="container">
-        <span class="category-badge">01</span>
-        <h3 class="category-title">Executive Operations & Management</h3>
-        <p class="category-subtitle">Ideal for CEOs, Founders, and Busy Executives who need to reclaim their time.</p>
+        <span class="category-badge" data-i18n="services.cat1.badge">01</span>
+        <h3 class="category-title" data-i18n="services.cat1.title">Executive Operations & Management</h3>
+        <p class="category-subtitle" data-i18n="services.cat1.subtitle">Ideal for CEOs, Founders, and Busy Executives
+          who need to reclaim their time.</p>
       </div>
     </div>
 
@@ -335,10 +338,12 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Strategic Calendar Management <i data-lucide="chevron-down" class="service-chevron"></i></h3>
-        <p>Stop playing Tetris with your time. I don't just schedule meetings; I protect your focus. I manage complex
-          time zones, set up buffer times to prevent burnout, and handle rescheduling seamlessly. I ensure your calendar
-          reflects your business priorities, not just other people's demands.</p>
+        <h3><span data-i18n="services.items.0.title">Strategic Calendar Management</span> <i data-lucide="chevron-down"
+            class="service-chevron"></i></h3>
+        <p data-i18n="services.items.0.desc">Stop playing Tetris with your time. I don't just schedule meetings; I
+          protect your focus. I manage complex time zones, set up buffer times to prevent burnout, and handle
+          rescheduling seamlessly. I ensure your calendar reflects your business priorities, not just other people's
+          demands.</p>
       </div>
     </div>
 
@@ -350,10 +355,11 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Inbox Triage & Communication <i data-lucide="chevron-down" class="service-chevron"></i></h3>
-        <p>Reach 'Inbox Zero' without the stress. I filter noise, highlight urgent matters, and draft professional
-          responses on your behalf. Whether it's negotiating with vendors or replying to clients, I maintain your
-          professional voice in both English and Spanish.</p>
+        <h3><span data-i18n="services.items.1.title">Inbox Triage & Communication</span> <i data-lucide="chevron-down"
+            class="service-chevron"></i></h3>
+        <p data-i18n="services.items.1.desc">Reach 'Inbox Zero' without the stress. I filter noise, highlight urgent
+          matters, and draft professional responses on your behalf. Whether it's negotiating with vendors or replying to
+          clients, I maintain your professional voice in both English and Spanish.</p>
       </div>
     </div>
 
@@ -365,10 +371,12 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Executive Travel Logistics <i data-lucide="chevron-down" class="service-chevron"></i></h3>
-        <p>Travel with the ease of a diplomat. Leveraging my background in embassy logistics, I coordinate end-to-end
-          travel arrangements: flights, premium accommodation, ground transport, and detailed visual itineraries. I
-          anticipate problems before they happen so you can focus on the destination, not the journey.</p>
+        <h3><span data-i18n="services.items.2.title">Executive Travel Logistics</span> <i data-lucide="chevron-down"
+            class="service-chevron"></i></h3>
+        <p data-i18n="services.items.2.desc">Travel with the ease of a diplomat. Leveraging my background in embassy
+          logistics, I coordinate end-to-end travel arrangements: flights, premium accommodation, ground transport, and
+          detailed visual itineraries. I anticipate problems before they happen so you can focus on the destination, not
+          the journey.</p>
       </div>
     </div>
 
@@ -380,19 +388,22 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Bilingual Business Liaison <i data-lucide="chevron-down" class="service-chevron"></i></h3>
-        <p>Break down language barriers to expand your business. I act as your bridge for operations in Latin America
-          and the US/Canada. From translating documents and interpreting during virtual meetings to managing
-          relationships with Spanish-speaking stakeholders, I ensure nothing gets lost in translation.</p>
+        <h3><span data-i18n="services.items.3.title">Bilingual Business Liaison</span> <i data-lucide="chevron-down"
+            class="service-chevron"></i></h3>
+        <p data-i18n="services.items.3.desc">Break down language barriers to expand your business. I act as your bridge
+          for operations in Latin America and the US/Canada. From translating documents and interpreting during virtual
+          meetings to managing relationships with Spanish-speaking stakeholders, I ensure nothing gets lost in
+          translation.</p>
       </div>
     </div>
 
     <!-- Category 2: Creative Studio & Social Media -->
     <div class="category-header creative">
       <div class="container">
-        <span class="category-badge">02</span>
-        <h3 class="category-title">Creative Studio & Social Media</h3>
-        <p class="category-subtitle">Ideal for brands that want to look professional, aesthetic, and consistent.</p>
+        <span class="category-badge" data-i18n="services.cat2.badge">02</span>
+        <h3 class="category-title" data-i18n="services.cat2.title">Creative Studio & Social Media</h3>
+        <p class="category-subtitle" data-i18n="services.cat2.subtitle">Ideal for brands that want to look professional,
+          aesthetic, and consistent.</p>
       </div>
     </div>
 
@@ -404,10 +415,11 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Social Media Curation & Community <i data-lucide="chevron-down" class="service-chevron"></i></h3>
-        <p>Your digital storefront should look as professional as you are. I handle the day-to-day of your social
-          presence: curating aesthetic content, designing on-brand posts, scheduling for optimal times, and engaging
-          with your audience to turn followers into loyal clients.</p>
+        <h3><span data-i18n="services.items.4.title">Social Media Curation & Community</span> <i
+            data-lucide="chevron-down" class="service-chevron"></i></h3>
+        <p data-i18n="services.items.4.desc">Your digital storefront should look as professional as you are. I handle
+          the day-to-day of your social presence: curating aesthetic content, designing on-brand posts, scheduling for
+          optimal times, and engaging with your audience to turn followers into loyal clients.</p>
       </div>
     </div>
 
@@ -419,10 +431,11 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>High-Impact Presentation Design <i data-lucide="chevron-down" class="service-chevron"></i></h3>
-        <p>Ditch the boring slides. I transform your rough notes and data into sleek, persuasive Executive Pitch Decks,
-          Sales Presentations, and webinar slides. I combine corporate structure with creative flair to keep your
-          audience engaged.</p>
+        <h3><span data-i18n="services.items.5.title">High-Impact Presentation Design</span> <i
+            data-lucide="chevron-down" class="service-chevron"></i></h3>
+        <p data-i18n="services.items.5.desc">Ditch the boring slides. I transform your rough notes and data into sleek,
+          persuasive Executive Pitch Decks, Sales Presentations, and webinar slides. I combine corporate structure with
+          creative flair to keep your audience engaged.</p>
       </div>
     </div>
 
@@ -434,10 +447,11 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Digital Asset Creation <i data-lucide="chevron-down" class="service-chevron"></i></h3>
-        <p>Professional collateral that sells for you. I design Lead Magnets (E-books), Media Kits, One-Pagers, and
-          Welcome Packets that align perfectly with your brand identity, helping you position yourself as an authority
-          in your niche.</p>
+        <h3><span data-i18n="services.items.6.title">Digital Asset Creation</span> <i data-lucide="chevron-down"
+            class="service-chevron"></i></h3>
+        <p data-i18n="services.items.6.desc">Professional collateral that sells for you. I design Lead Magnets
+          (E-books), Media Kits, One-Pagers, and Welcome Packets that align perfectly with your brand identity, helping
+          you position yourself as an authority in your niche.</p>
       </div>
     </div>
 
@@ -449,19 +463,21 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Newsletter & Email Marketing <i data-lucide="chevron-down" class="service-chevron"></i></h3>
-        <p>Stay top-of-mind with your clients. I format, design, and schedule your weekly or monthly newsletters. I
-          ensure your list is segmented correctly and your emails look perfect on mobile and desktop, ready to drive
-          clicks and sales.</p>
+        <h3><span data-i18n="services.items.7.title">Newsletter & Email Marketing</span> <i data-lucide="chevron-down"
+            class="service-chevron"></i></h3>
+        <p data-i18n="services.items.7.desc">Stay top-of-mind with your clients. I format, design, and schedule your
+          weekly or monthly newsletters. I ensure your list is segmented correctly and your emails look perfect on
+          mobile and desktop, ready to drive clicks and sales.</p>
       </div>
     </div>
 
     <!-- Category 3: Lifestyle & Special Projects -->
     <div class="category-header lifestyle">
       <div class="container">
-        <span class="category-badge">03</span>
-        <h3 class="category-title">Lifestyle & Special Projects</h3>
-        <p class="category-subtitle">For the entrepreneur who needs support beyond the boardroom.</p>
+        <span class="category-badge" data-i18n="services.cat3.badge">03</span>
+        <h3 class="category-title" data-i18n="services.cat3.title">Lifestyle & Special Projects</h3>
+        <p class="category-subtitle" data-i18n="services.cat3.subtitle">For the entrepreneur who needs support beyond
+          the boardroom.</p>
       </div>
     </div>
 
@@ -473,10 +489,11 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Personal Lifestyle Concierge <i data-lucide="chevron-down" class="service-chevron"></i></h3>
-        <p>Success requires balance. Let me handle the personal details that distract you from the big picture: making
-          restaurant reservations, researching gifts for clients/family, booking medical appointments, or managing
-          household vendors.</p>
+        <h3><span data-i18n="services.items.8.title">Personal Lifestyle Concierge</span> <i data-lucide="chevron-down"
+            class="service-chevron"></i></h3>
+        <p data-i18n="services.items.8.desc">Success requires balance. Let me handle the personal details that distract
+          you from the big picture: making restaurant reservations, researching gifts for clients/family, booking
+          medical appointments, or managing household vendors.</p>
       </div>
     </div>
 
@@ -488,17 +505,18 @@
         </div>
       </div>
       <div class="service-content">
-        <h3>Virtual Event & Webinar Coordination <i data-lucide="chevron-down" class="service-chevron"></i></h3>
-        <p>Host flawless online events. From setting up the Zoom/Webinar backend and managing registrations to sending
-          reminders and providing live technical support, I ensure your virtual events run smoothly from start to
-          finish.</p>
+        <h3><span data-i18n="services.items.9.title">Virtual Event & Webinar Coordination</span> <i
+            data-lucide="chevron-down" class="service-chevron"></i></h3>
+        <p data-i18n="services.items.9.desc">Host flawless online events. From setting up the Zoom/Webinar backend and
+          managing registrations to sending reminders and providing live technical support, I ensure your virtual events
+          run smoothly from start to finish.</p>
       </div>
     </div>
 
     <!-- CTA Section -->
     <div class="services-cta">
-      <p>Ready to experience seamless support?</p>
-      <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+      <p data-i18n="services.cta">Ready to experience seamless support?</p>
+      <a href="#contact" class="btn btn-primary" data-i18n="services.ctaBtn">Let's Work Together</a>
     </div>
 
   </section>
@@ -508,23 +526,23 @@
     <div class="contact-container">
       <!-- Left: Contact Info -->
       <div class="contact-info" data-aos="fade-right">
-        <span class="section-subtitle">Contact</span>
-        <h2>Book Your Strategic Discovery Call</h2>
-        <p>Ready to reclaim your time and scale your impact? Let's discuss your business needs and how I can help you
-          operate with executive precision.</p>
+        <span class="section-subtitle" data-i18n="contact.subtitle">Contact</span>
+        <h2 data-i18n="contact.title">Book Your Strategic Discovery Call</h2>
+        <p data-i18n="contact.desc">Ready to reclaim your time and scale your impact? Let's discuss your business needs
+          and how I can help you operate with executive precision.</p>
 
         <div class="contact-details">
           <div class="contact-detail-item">
             <i data-lucide="mail" size="24"></i>
-            <span>hello@brightvastudio.com</span>
+            <span data-i18n="contact.email">hello@brightvastudio.com</span>
           </div>
           <div class="contact-detail-item">
             <i data-lucide="map-pin" size="24"></i>
-            <span>Serving Clients in USA & Canada</span>
+            <span data-i18n="contact.location">Serving Clients in USA & Canada</span>
           </div>
           <div class="contact-detail-item">
             <i data-lucide="clock" size="24"></i>
-            <span>Operating on North American Time Zones (EST/CST)</span>
+            <span data-i18n="contact.hours">Operating on North American Time Zones (EST/CST)</span>
           </div>
         </div>
 
@@ -538,8 +556,8 @@
 
       <!-- Right: Scheduling Widget -->
       <div class="scheduling-widget" data-aos="fade-left">
-        <h3>Book Your Appointment</h3>
-        <p>Select a time that works best for you</p>
+        <h3 data-i18n="contact.widgetTitle">Book Your Appointment</h3>
+        <p data-i18n="contact.widgetDesc">Select a time that works best for you</p>
 
         <!-- OPTION 1: Calendly Widget (Recommended) -->
         <!-- Replace 'YOUR_CALENDLY_USERNAME' with your actual Calendly username -->
@@ -616,7 +634,7 @@
   <!-- Testimonials -->
   <section id="testimonials" class="love-notes">
     <div class="container">
-      <span class="section-subtitle">Testimonials</span>
+      <span class="section-subtitle" data-i18n="testimonials.subtitle">Testimonials</span>
       <!-- Eliminamos el grid y usamos un contenedor simple centrado -->
       <div class="testimonials-container"
         style="margin-top: 3rem; position: relative; min-height: 400px; display: flex; align-items: center; justify-content: center;">
@@ -626,7 +644,7 @@
           <div style="opacity: 0.15; margin-bottom: 1.5rem;">
             <i data-lucide="quote" size="48"></i>
           </div>
-          <p class="note-text"
+          <p class="note-text" data-i18n="testimonials.t1.quote"
             style="font-size: 1.8rem; font-family: var(--font-heading); font-style: italic; color: var(--text-dark); margin-bottom: 2rem; line-height: 1.4;">
             "Paula didn't just organize my calendar; she completely transformed how I operate. Before working with her,
             I was drowning in meetings and logistics. She came in with a strategic mindset, streamlined my
@@ -637,8 +655,9 @@
               style="background: var(--accent-olive); padding: 0.8rem; border-radius: 50%; color: white; margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: center;">
               <i data-lucide="trending-up" size="24"></i>
             </div>
-            <h4 style="font-size: 1rem; margin: 0; font-weight: 700;">CEO, Business Consulting Firm</h4>
-            <span style="font-size: 0.9rem; color: var(--text-soft);">Canada</span>
+            <h4 style="font-size: 1rem; margin: 0; font-weight: 700;" data-i18n="testimonials.t1.author">CEO, Business
+              Consulting Firm</h4>
+            <span style="font-size: 0.9rem; color: var(--text-soft);" data-i18n="testimonials.t1.loc">Canada</span>
           </div>
         </div>
 
@@ -658,8 +677,10 @@
               style="background: var(--accent-olive); padding: 0.8rem; border-radius: 50%; color: white; margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: center;">
               <i data-lucide="zap" size="24"></i>
             </div>
-            <h4 style="font-size: 1rem; margin: 0; font-weight: 700;">Senior Executive</h4>
-            <span style="font-size: 0.9rem; color: var(--text-soft);">Energy Sector</span>
+            <h4 style="font-size: 1rem; margin: 0; font-weight: 700;" data-i18n="testimonials.t2.author">Senior
+              Executive</h4>
+            <span style="font-size: 0.9rem; color: var(--text-soft);" data-i18n="testimonials.t2.loc">Energy
+              Sector</span>
           </div>
         </div>
 
@@ -668,7 +689,7 @@
           <div style="opacity: 0.15; margin-bottom: 1.5rem;">
             <i data-lucide="quote" size="48"></i>
           </div>
-          <p class="note-text"
+          <p class="note-text" data-i18n="testimonials.t3.quote"
             style="font-size: 1.8rem; font-family: var(--font-heading); font-style: italic; color: var(--text-dark); margin-bottom: 2rem; line-height: 1.4;">
             "Finding someone who understands both the North American business pace and the Latin American market is
             rare. Paula is that bridge. She is proactive, professional, and treats your business with the same care as
@@ -679,8 +700,9 @@
               style="background: var(--accent-olive); padding: 0.8rem; border-radius: 50%; color: white; margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: center;">
               <i data-lucide="lightbulb" size="24"></i>
             </div>
-            <h4 style="font-size: 1rem; margin: 0; font-weight: 700;">Founder</h4>
-            <span style="font-size: 0.9rem; color: var(--text-soft);">Growing Agency</span>
+            <h4 style="font-size: 1rem; margin: 0; font-weight: 700;" data-i18n="testimonials.t3.author">Founder</h4>
+            <span style="font-size: 0.9rem; color: var(--text-soft);" data-i18n="testimonials.t3.loc">Growing
+              Agency</span>
           </div>
         </div>
 
@@ -701,10 +723,10 @@
         <a href="mailto:hello@brightvastudio.com"><i data-lucide="mail"></i></a>
       </div>
       <div class="footer-links">
-        <a href="#hero">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#hero" data-i18n="footer.home">Home</a>
+        <a href="#services" data-i18n="footer.services">Services</a>
+        <a href="#about" data-i18n="footer.about">About</a>
+        <a href="#contact" data-i18n="footer.contact">Contact</a>
       </div>
       <p style="color: white; font-size: 0.8rem; margin-top: 0.5rem;">&copy; 2024 Paula B. All Rights Reserved. | <a
           href="privacy-policy.html">Privacy Policy</a> | <a href="terms-and-conditions.html">Terms & Conditions</a> |
@@ -1207,356 +1229,28 @@
       animateAbout();
     }
 
-    // --- TRANSLATION SYSTEM ---
-    const translations = {
-      en: {
-        nav: {
-          about: "About",
-          services: "Services",
-          testimonials: "Testimonials",
-          contact: "Contact",
-          cta: "Let's Chat"
-        },
-        hero: {
-          subtitle: "Hey there, I'm Paula",
-          title: "Your Strategic Partner in <br><em>Business & Life</em>",
-          description: "I streamline operations for visionary leaders, allowing you to focus on high-level strategy while I manage the execution. From complex logistics to digital presence, let's build your legacy with precision.",
-          btn1: "Work With Me",
-          btn2: "View Services"
-        },
-        about: {
-          subtitle: "About",
-          title: "The Strategic Partner Behind Your Next Big Move",
-          p1: "I believe that true leadership implies the freedom to focus on the big picture, not the fine print. But for many visionaries, that freedom is consumed by the noise of daily operations.",
-          p2: "<strong>That is where I step in.</strong>",
-          p3: "I am Paula Blanco, and I created BrightVA Studio to bridge the gap between executive chaos and operational clarity.",
-          p4: "My background sets me apart. I have spent over 8 years navigating high-stakes environments, supporting C-suite leaders in both diplomatic and multinational corporate sectors. I learned early on that in business, trust and precision are everything.",
-          p5: "Now, I bring that same level of executive excellence to your business. Whether I'm curating your digital presence or orchestrating complex travel logistics, my approach is intuitive, proactive, and deeply strategic.",
-          p6: "I don't just manage tasks; I manage outcomes. I am here to be the gatekeeper of your time and the architect of your peace of mind, so you can get back to doing what you do best: leading.",
-          signature: "Warmly, Paula",
-          cta: "Book a Call"
-        },
-        services: {
-          subtitle: "Services",
-          title: "Strategic Business Solutions",
-          cat1: {
-            title: "EXECUTIVE OPERATIONS & MANAGEMENT",
-            subtitle: "Ideal for CEOs, Founders, and Busy Executives who need to reclaim their time."
-          },
-          cat2: {
-            title: "CREATIVE STUDIO & SOCIAL MEDIA",
-            subtitle: "Ideal for brands that want to look professional, aesthetic, and consistent."
-          },
-          cat3: {
-            title: "LIFESTYLE & SPECIAL PROJECTS",
-            subtitle: "For the entrepreneur who needs support beyond the boardroom."
-          },
-          items: [
-            { title: "Strategic Calendar Management", desc: "I don't just schedule meetings; I protect your time. I ensure your calendar aligns with your priorities, buffering time for deep work and preventing burnout." },
-            { title: "Inbox Triage & Communication Management", desc: "Achieve Inbox Zero without lifting a finger. I filter, prioritize, and draft responses for your emails, ensuring critical messages are flagged and noise is eliminated." },
-            { title: "Executive Travel Logistics", desc: "Travel with the ease of a diplomat. Leveraging my background in embassy logistics, I coordinate end-to-end travel arrangements: flights, premium accommodation, ground transport, and detailed visual itineraries." },
-            { title: "Bilingual Business Liaison", desc: "Expand your reach with seamless English/Spanish support. I translate documents, interpret during meetings, and manage communications with international stakeholders." },
-            { title: "Social Media Curation & Community", desc: "Elevate your digital presence. I plan content calendars, curate aesthetic visuals, schedule posts, and engage with your community to foster genuine connections." },
-            { title: "High-Impact Presentation Design", desc: "Turn data into compelling stories. I design pitch decks, keynote presentations, and internal reports that are visually stunning and professionally polished." },
-            { title: "Digital Asset Creation", desc: "Need on-brand visuals? I create social media graphics, one-pagers, and promotional materials that align perfectly with your brand identity." },
-            { title: "Newsletter & Email Marketing Support", desc: "Keep your audience engaged. I format, schedule, and manage your newsletters, ensuring consistent communication with your client base." },
-            { title: "Personal Lifestyle Concierge", desc: "Success requires balance. Let me handle the personal details that distract you from the big picture: reservations, gifts, medical appointments, or household vendors." },
-            { title: "Virtual Event & Webinar Coordination", desc: "Host flawless online events. From setting up the Zoom/Webinar backend to managing registrations and technical support, I ensure your events run smoothly." }
-          ],
-          btnFront: "See Details",
-          btnBack: "Go Back"
-        },
-        testimonials: {
-          subtitle: "Testimonials",
-          t1: {
-            quote: "\"Paula didn't just organize my calendar; she completely transformed how I operate. Before working with her, I was drowning in meetings and logistics. She came in with a strategic mindset, streamlined my communications, and gave me back hours of focus time every week.\"",
-            author: "CEO, Business Consulting Firm",
-            loc: "Canada"
-          },
-          t2: {
-            quote: "\"Paula’s attention to detail is in a league of its own. Whether coordinating complex international travel or managing high-stakes executive meetings, her execution is flawless. She brings a level of corporate precision and discretion that gives you total peace of mind.\"",
-            author: "Senior Executive",
-            loc: "Energy Sector"
-          },
-          t3: {
-            quote: "\"Finding someone who understands both the North American business pace and the Latin American market is rare. Paula is that bridge. She is proactive, professional, and treats your business with the same care as if it were her own.\"",
-            author: "Founder",
-            loc: "Growing Agency"
-          }
-        },
-        contact: {
-          subtitle: "Contact",
-          title: "Book Your Strategic Discovery Call",
-          desc: "Ready to reclaim your time and scale your impact? Let's discuss your business needs and how I can help you operate with executive precision.",
-          email: "hello@brightvastudio.com",
-          location: "Serving Clients in USA & Canada",
-          hours: "Operating on North American Time Zones (EST/CST)",
-          expect: "<strong>What to expect:</strong><br>• A focused 30-minute assessment<br>• Identification of operational bottlenecks<br>• Clear next steps to elevate your business"
-        },
-        footer: {
-          home: "Home",
-          services: "Services",
-          about: "About",
-          contact: "Contact"
-        }
-      },
-      es: {
-        nav: {
-          about: "Acerca de",
-          services: "Servicios",
-          testimonials: "Testimonios",
-          contact: "Contacto",
-          cta: "Hablemos"
-        },
-        hero: {
-          subtitle: "Hola, soy Paula",
-          title: "Tu Socia Estratégica en <br><em>Negocios y Vida</em>",
-          description: "Agilizo las operaciones para líderes visionarios, permitiéndote enfocarte en la estrategia de alto nivel mientras yo gestiono la ejecución. Desde logística compleja hasta presencia digital, construyamos tu legado con precisión.",
-          btn1: "Trabajar Conmigo",
-          btn2: "Ver Servicios"
-        },
-        about: {
-          subtitle: "Acerca de",
-          title: "La Socia Estratégica Detrás de Tu Próximo Gran Movimiento",
-          p1: "Creo que el verdadero liderazgo implica la libertad de enfocarse en el panorama general, no en la letra pequeña. Pero para muchos visionarios, esa libertad es consumida por el ruido de las operaciones diarias.",
-          p2: "<strong>Ahí es donde entro yo.</strong>",
-          p3: "Soy Paula Blanco, y creé BrightVA Studio para cerrar la brecha entre el caos ejecutivo y la claridad operativa.",
-          p4: "Mi experiencia me distingue. He pasado más de 8 años navegando entornos de alta exigencia, apoyando a líderes C-suite tanto en sectores diplomáticos como corporativos multinacionales. Aprendí desde temprano que en los negocios, la confianza y la precisión lo son todo.",
-          p5: "Ahora, traigo ese mismo nivel de excelencia ejecutiva a tu negocio. Ya sea curando tu presencia digital u orquestando logística de viajes complejos, mi enfoque es intuitivo, proactivo y profundamente estratégico.",
-          p6: "No solo gestiono tareas; gestiono resultados. Estoy aquí para proteger tu tiempo y darte la tranquilidad que necesitas, para que puedas volver a hacer lo que mejor sabes hacer: liderar.",
-          signature: "Con cariño, Paula",
-          cta: "Reserva una llamada"
-        },
-        services: {
-          subtitle: "Servicios",
-          title: "Soluciones Estratégicas de Negocio",
-          cat1: {
-            title: "OPERACIONES EJECUTIVAS Y GESTIÓN",
-            subtitle: "Ideal para CEOs, Fundadores y Ejecutivos ocupados que necesitan recuperar su tiempo."
-          },
-          cat2: {
-            title: "ESTUDIO CREATIVO Y REDES SOCIALES",
-            subtitle: "Ideal para marcas que quieren lucir profesionales, estéticas y consistentes."
-          },
-          cat3: {
-            title: "ESTILO DE VIDA Y PROYECTOS ESPECIALES",
-            subtitle: "Para el emprendedor que necesita apoyo más allá de la sala de juntas."
-          },
-          items: [
-            { title: "Gestión Estratégica de Agenda", desc: "No solo programo reuniones; protejo tu tiempo. Aseguro que tu calendario se alinee con tus prioridades, reservando tiempo para trabajo profundo y evitando el agotamiento." },
-            { title: "Gestión de Inbox y Comunicaciones", desc: "Logra 'Inbox Zero' sin mover un dedo. Filtro, priorizo y redacto respuestas para tus correos, asegurando que los mensajes críticos sean marcados y el ruido eliminado." },
-            { title: "Logística Ejecutiva de Viajes", desc: "Viaja con la facilidad de un diplomático. Aprovechando mi experiencia en logística de embajadas, coordino viajes de principio a fin: vuelos, alojamiento premium y transporte." },
-            { title: "Enlace Comercial Bilingüe", desc: "Expande tu alcance con soporte fluido en inglés/español. Traduzco documentos, interpreto en reuniones y gestiono comunicaciones con stakeholders internacionales." },
-            { title: "Gestión de Contenidos y Comunidad", desc: "Eleva tu presencia digital. Planifico calendarios de contenido, reviso visuales estéticos, programo publicaciones e interactúo con tu comunidad para fomentar conexiones genuinas." },
-            { title: "Diseño de Presentaciones de Alto Impacto", desc: "Convierte datos en historias convincentes. Diseño pitch decks, presentaciones magistrales e informes internos que son visualmente impactantes y profesionales." },
-            { title: "Creación de Activos Digitales", desc: "¿Necesitas visuales con marca? Creo gráficos para redes sociales, one-pagers y materiales promocionales que se alinean perfectamente con tu identidad de marca." },
-            { title: "Soporte de Newsletter y Email Marketing", desc: "Mantén a tu audiencia comprometida. Formateo, programo y gestiono tus boletines, asegurando una comunicación consistente con tu base de clientes." },
-            { title: "Concierge Personal de Estilo de Vida", desc: "El éxito requiere equilibrio. Déjame manejar los detalles personales: reservaciones, regalos, citas médicas o proveedores del hogar." },
-            { title: "Coordinación de Eventos Virtuales", desc: "Organiza eventos online impecables. Desde configurar el backend de Zoom/Webinar hasta gestionar registros y soporte técnico, aseguro que tus eventos fluyan." }
-          ],
-          btnFront: "Ver Detalles",
-          btnBack: "Volver"
-        },
-        testimonials: {
-          subtitle: "Testimonios",
-          t1: {
-            quote: "\"Paula no solo organizó mi calendario; transformó completamente cómo opero. Antes de ella, me ahogaba en reuniones. Llegó con mentalidad estratégica y me devolvió horas de enfoque cada semana.\"",
-            author: "CEO, Firma de Consultoría",
-            loc: "Canadá"
-          },
-          t2: {
-            quote: "\"La atención al detalle de Paula está en otra liga. Ya sea coordinando viajes complejos o gestionando reuniones ejecutivas de alto nivel, su ejecución es impecable. Aporta una precisión corporativa que da total tranquilidad.\"",
-            author: "Ejecutivo Senior",
-            loc: "Sector Energético"
-          },
-          t3: {
-            quote: "\"Encontrar a alguien que entienda el ritmo de negocios de Norteamérica y el mercado latinoamericano es raro. Paula es ese puente. Es proactiva, profesional y trata tu negocio con el mismo cuidado que si fuera suyo.\"",
-            author: "Fundadora",
-            loc: "Agencia en Crecimiento"
-          }
-        },
-        contact: {
-          subtitle: "Contacto",
-          title: "Reserva una llamada",
-          desc: "¿Listo para recuperar tu tiempo y escalar tu impacto? Hablemos sobre las necesidades de tu negocio y cómo puedo ayudarte a operar con precisión ejecutiva.",
-          email: "hello@brightvastudio.com",
-          location: "Sirviendo clientes en USA y Canadá",
-          hours: "Operando en zonas horarias de Norteamérica (EST/CST)",
-          expect: "<strong>Qué esperar:</strong><br>• Una evaluación enfocada de 30 minutos<br>• Identificación de cuellos de botella<br>• Pasos claros para elevar tu negocio"
-        },
-        footer: {
-          home: "Inicio",
-          services: "Servicios",
-          about: "Acerca de",
-          contact: "Contacto"
-        }
-      }
-    };
+    // --- NUEVO SISTEMA DE TRADUCCIÓN ---
+    // Cargado desde translations.js externo
+  </script>
 
-    let currentLang = 'en';
+  <!-- Sistema de Traducción Robusto -->
+  <script src="translations.js"></script>
+  <script>
+    // Inicializar el sistema de traducción
+    const translationManager = new TranslationManager();
 
-    function translatePage(lang) {
-      currentLang = lang;
-      const t = translations[lang];
-
-      // Update Nav (Desktop)
-      const navLinks = document.querySelectorAll('.nav-links a');
-      if (navLinks.length >= 4) {
-        navLinks[0].textContent = t.nav.about;
-        navLinks[1].textContent = t.nav.services;
-        navLinks[2].textContent = t.nav.testimonials;
-        navLinks[3].textContent = t.nav.contact;
-      }
-
-      // Update Mobile Nav
-      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-      if (mobileNavLinks.length >= 4) {
-        mobileNavLinks[0].textContent = t.nav.about;
-        mobileNavLinks[1].textContent = t.nav.services;
-        mobileNavLinks[2].textContent = t.nav.testimonials;
-        mobileNavLinks[3].textContent = t.nav.contact;
-      }
-
-      // Update CTA buttons in nav (both desktop and mobile)
-      const navCtaBtns = document.querySelectorAll('nav .btn-primary, .mobile-nav .btn-primary');
-      navCtaBtns.forEach(btn => {
-        btn.textContent = t.nav.cta;
+    // Esperar a que el DOM esté listo
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        translationManager.init();
       });
-
-      // Update Hero
-      document.querySelector('.script-highlight').innerHTML = t.hero.subtitle;
-      document.querySelector('.hero h1').innerHTML = t.hero.title;
-      document.querySelector('.hero p').textContent = t.hero.description;
-      const heroBtns = document.querySelectorAll('.hero-btns .btn');
-      if (heroBtns.length >= 2) {
-        heroBtns[0].textContent = t.hero.btn1;
-        heroBtns[1].textContent = t.hero.btn2;
-      }
-
-      // Update About
-      const aboutSection = document.querySelector('#about');
-      if (aboutSection) {
-        aboutSection.querySelector('.section-subtitle').textContent = t.about.subtitle;
-        aboutSection.querySelector('h2').textContent = t.about.title;
-        const aboutPs = aboutSection.querySelectorAll('.about-content p');
-        // Assuming structure: p, p(strong), p, p, p, p
-        if (aboutPs.length >= 6) {
-          aboutPs[0].textContent = t.about.p1;
-          aboutPs[1].innerHTML = t.about.p2;
-          aboutPs[2].textContent = t.about.p3;
-          aboutPs[3].textContent = t.about.p4;
-          aboutPs[4].textContent = t.about.p5;
-          aboutPs[5].textContent = t.about.p6;
-        }
-        const sig = aboutSection.querySelector('.signature');
-        if (sig) sig.textContent = t.about.signature;
-
-        const aboutBtn = aboutSection.querySelector('.btn-primary');
-        if (aboutBtn) aboutBtn.textContent = t.about.cta;
-      }
-
-      // Update Services
-      const servicesSection = document.querySelector('#services');
-      if (servicesSection) {
-        servicesSection.querySelector('.section-subtitle').textContent = t.services.subtitle;
-        servicesSection.querySelector('.section-title').textContent = t.services.title;
-
-        // Categories titles
-        const catTitles = servicesSection.querySelectorAll('.category-title');
-        const catSubs = servicesSection.querySelectorAll('.category-subtitle');
-        if (catTitles.length >= 3) {
-          catTitles[0].textContent = t.services.cat1.title;
-          catTitles[1].textContent = t.services.cat2.title;
-          catTitles[2].textContent = t.services.cat3.title;
-        }
-        if (catSubs.length >= 3) {
-          catSubs[0].textContent = t.services.cat1.subtitle;
-          catSubs[1].textContent = t.services.cat2.subtitle;
-          catSubs[2].textContent = t.services.cat3.subtitle;
-        }
-
-        // Service Items
-        const rows = servicesSection.querySelectorAll('.service-row');
-        rows.forEach((row, index) => {
-          if (t.services.items[index]) {
-            const h3 = row.querySelector('.service-content h3');
-            // Preserve the chevron
-            if (h3) {
-              const chevron = '<i data-lucide="chevron-down" class="service-chevron"></i>';
-              h3.innerHTML = t.services.items[index].title + ' ' + chevron;
-            }
-            const p = row.querySelector('.service-content p');
-            if (p) p.textContent = t.services.items[index].desc;
-          }
-        });
-      }
-
-      // Update Testimonials
-      const testSection = document.querySelector('#testimonials');
-      if (testSection) {
-        testSection.querySelector('.section-subtitle').textContent = t.testimonials.subtitle;
-        const tCards = testSection.querySelectorAll('.testimonial-card');
-        if (tCards.length >= 3) {
-          // T1
-          tCards[0].querySelector('.note-text').textContent = t.testimonials.t1.quote;
-          tCards[0].querySelector('.note-author h4').textContent = t.testimonials.t1.author;
-          tCards[0].querySelector('.note-author span').textContent = t.testimonials.t1.loc;
-          // T2
-          tCards[1].querySelector('.note-text').textContent = t.testimonials.t2.quote;
-          tCards[1].querySelector('.note-author h4').textContent = t.testimonials.t2.author;
-          tCards[1].querySelector('.note-author span').textContent = t.testimonials.t2.loc;
-          // T3
-          tCards[2].querySelector('.note-text').textContent = t.testimonials.t3.quote;
-          tCards[2].querySelector('.note-author h4').textContent = t.testimonials.t3.author;
-          tCards[2].querySelector('.note-author span').textContent = t.testimonials.t3.loc;
-        }
-      }
-
-      // Update Contact
-      const contactSection = document.querySelector('#contact');
-      if (contactSection) {
-        contactSection.querySelector('.section-subtitle').textContent = t.contact.subtitle;
-        contactSection.querySelector('h2').textContent = t.contact.title;
-        contactSection.querySelector('p').textContent = t.contact.desc;
-
-        const details = contactSection.querySelectorAll('.contact-detail-item span');
-        if (details.length >= 3) {
-          details[0].textContent = t.contact.email;
-          details[1].textContent = t.contact.location;
-          details[2].textContent = t.contact.hours;
-        }
-        const expectP = contactSection.querySelector('p[style*="margin-top"]');
-        if (expectP) expectP.innerHTML = t.contact.expect;
-      }
-
-      // Footer
-      const footerLinks = document.querySelectorAll('.footer-links a');
-      if (footerLinks.length >= 4) {
-        footerLinks[0].textContent = t.footer.home;
-        footerLinks[1].textContent = t.footer.services;
-        footerLinks[2].textContent = t.footer.about;
-        footerLinks[3].textContent = t.footer.contact;
-      }
-
-      // Re-init icons
-      lucide.createIcons();
-
-      // Update active button state
-      document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.getAttribute('data-lang') === lang) {
-          btn.classList.add('active');
-        }
-      });
+    } else {
+      // DOM ya está listo
+      translationManager.init();
     }
+  </script>
 
-    // Language switcher event listeners
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const lang = btn.getAttribute('data-lang');
-        translatePage(lang);
-      });
-    });
+  <script>
 
     // Mobile Menu Functionality
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
