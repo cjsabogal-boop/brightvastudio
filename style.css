@@ -1706,8 +1706,10 @@
     /* CTA Section */
     .services-cta {
       text-align: center;
-      padding: 5rem 2rem;
+      padding: 3rem 2rem;
       margin-top: 3rem;
+      background: linear-gradient(135deg, #B8C5A0 0%, #A8B88F 50%, #B8C5A0 100%);
+      border-radius: 0;
     }
 
     .services-cta p {
@@ -1715,7 +1717,7 @@
       font-size: 1.8rem;
       font-style: italic;
       color: var(--text-dark);
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     /* Responsive */
