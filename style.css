@@ -1912,7 +1912,7 @@
 
     /* Testimonials / Love Notes */
     .love-notes {
-      padding: 8rem 0;
+      padding: 4rem 0;
       /* Subtle premium gradient */
       background: linear-gradient(135deg, rgba(232, 235, 224, 0.8) 0%, rgba(212, 217, 200, 0.8) 100%);
       text-align: center;
