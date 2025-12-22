@@ -1411,7 +1411,7 @@
     /* Category Header Bands */
     .category-header {
       background: linear-gradient(135deg, var(--accent-olive) 0%, #5a6833 100%);
-      padding: 2rem 2rem;
+      padding: 1.5rem 2rem;
       margin: 4rem 0 2rem;
       position: relative;
       overflow: hidden;
@@ -1778,7 +1778,7 @@
       }
 
       .category-header {
-        padding: 1.5rem 1.5rem;
+        padding: 1rem 1.5rem;
         margin: 2rem 0 1rem;
       }
 
